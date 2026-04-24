@@ -80,7 +80,7 @@ function App() {
 
     try {
       setLoading(true);
-      const host = window.location.hostname === 'localhost' ? 'http://localhost:3000' : '';
+      const host = window.location.hostname === 'localhost' ? 'http://localhost:3000' : 'https://bajaj-test-12vy.onrender.com';
       const res = await axios.post(`${host}/bfhl`, { data: parsedData });
       setResponse(res.data);
     } catch (err) {
